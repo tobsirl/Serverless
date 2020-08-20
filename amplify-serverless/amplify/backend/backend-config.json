@@ -6,5 +6,21 @@
 			"service": "Lambda",
 			"dependsOn": []
 		}
+	},
+	"api": {
+		"helloworld": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "helloworld",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			]
+		}
 	}
 }
