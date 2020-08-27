@@ -1,0 +1,42 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "ampexpress",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/item",
+            "lambdaFunction": "ampexpress",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "restexpress",
+    "apiName": "restexpress",
+    "functionArns": [
+        {
+            "lambdaFunction": "ampexpress"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-amplifyexpress-dev-154736-authRole",
+        "unAuthRoleName": "amplify-amplifyexpress-dev-154736-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "ampexpress",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "2e950df7"
+}
