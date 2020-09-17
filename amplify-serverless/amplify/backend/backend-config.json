@@ -27,6 +27,26 @@
           ]
         }
       ]
+    },
+    "randomNumber": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "randomNumber",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ]
+    }
+  },
+  "auth": {
+    "cognito9e95e780": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation"
     }
   }
 }

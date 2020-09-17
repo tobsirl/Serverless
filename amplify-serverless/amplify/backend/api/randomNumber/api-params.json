@@ -1,0 +1,38 @@
+{
+    "paths": [
+        {
+            "name": "/random",
+            "lambdaFunction": "randomNumber",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/GET"
+                ]
+            },
+            "policyResourceName": "/random"
+        }
+    ],
+    "resourceName": "randomNumber",
+    "apiName": "randomNumber",
+    "functionArns": [
+        {
+            "lambdaFunction": "randomNumber"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-amplifyserverless-dev-171342-authRole",
+        "unAuthRoleName": "amplify-amplifyserverless-dev-171342-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "randomNumber",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
